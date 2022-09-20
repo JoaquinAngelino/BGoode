@@ -1,8 +1,8 @@
 import { useAuth0 } from "@auth0/auth0-react"
 import { useEffect, useState } from 'react'
 import './CreateProduct.css'
-import { Alert, AlertTitle, Snackbar } from "@mui/material"
 import axios from "axios"
+import SnackBar from "../../components/SnackBar/SnackBar"
 
 export default function CreateProduct() {
     
@@ -176,24 +176,9 @@ export default function CreateProduct() {
 
     return (
         <div className="bgImg">
-            <Snackbar elevation={6} open={warning} onClose={handleClose}>
-                <Alert onClose={handleClose} variant='filled' severity="error" sx={{ width: '100%' }}>
-                    <AlertTitle><strong>Warning</strong></AlertTitle>
-                    <strong>must be loged to submit a product</strong>
-                </Alert>
-            </Snackbar>
-            <Snackbar elevation={6} autoHideDuration={1500} open={success} onClose={handleClose}>
-                <Alert onClose={handleClose} variant='filled' severity="success" sx={{ width: '100%' }}>
-                    <AlertTitle><strong>Success</strong></AlertTitle>
-                    <strong>You've post a product</strong>
-                </Alert>
-            </Snackbar>
-            <Snackbar elevation={6} autoHideDuration={1500} open={fail} onClose={handleClose}>
-                <Alert onClose={handleClose} variant='filled' severity="warning" sx={{ width: '100%' }}>
-                    <AlertTitle><strong>Fail</strong></AlertTitle>
-                    <strong>Some fields may be wrong</strong>
-                </Alert>
-            </Snackbar>
+            <SnackBar title={"Warning"} text={"Must be loged to submit a product"} open={warning} type={"error"} handleClose={handleClose}/>
+            <SnackBar title={"Success"} text={"You've post a product"} duration={1500} open={success} type={"success"} handleClose={handleClose}/>
+            <SnackBar title={"Fail"} text={"Some fields may be wrong"} duration={1500} open={fail} type={"warning"} handleClose={handleClose}/>
             <div id='container-create'>
                 <div id='cont-title-form'>
                     <h1>Post your sale!</h1>

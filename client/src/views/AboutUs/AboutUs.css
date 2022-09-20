@@ -78,10 +78,9 @@ body.Dark .TeamCard {
 }
 
 body.Dark .CardIcon {
-  stroke: black;
+
 }
 
 body.Dark .CardIcon:hover {
-  stroke: black;
   fill: black;
 }

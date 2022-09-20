@@ -82,18 +82,6 @@ export default function AboutUs() {
             </a>
           </div>
         </div>
-        <div className='TeamCard'>
-          <img className='imageAboutUs' src="https://avatars.githubusercontent.com/u/40707996?v=4" alt="Pablo Spector" />
-          <p>Pablo Spector</p>
-          <div className='IconDiv'>
-            <a rel="noreferrer" target="_blank" href="https://github.com/PabloElectricista">
-              <BsGithub className='CardIcon' />
-            </a>
-            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/pablo-spector-69b814229/">
-              <BsLinkedin className='CardIcon' />
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   )

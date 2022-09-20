@@ -58,9 +58,7 @@
 }
 
 .CardIcon:hover {
-  color: white !important;
-  stroke: #169E85 !important;
-  stroke-width: 1px !important;
+  color: black !important;
 }
 
 .cardPrice {
