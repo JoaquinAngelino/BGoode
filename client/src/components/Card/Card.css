@@ -1,0 +1,79 @@
+.containerHome .card {
+  display: flex;
+  flex-direction: row !important;
+  width: 100% !important;
+  height: 43vh !important;
+  transition: all ease .5s;
+}
+
+.containerHome .card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-.5em);
+}
+
+.containCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerName {
+  font-weight: 800 !important;
+}
+
+.containerListDescription {
+  width: 8rem;
+}
+
+.card .MuiSkeleton-root {
+  height: 200px !important;
+  width: 200px !important;
+  margin: 15px !important;
+}
+
+.containCardImage {
+  margin: 1rem;
+  width: 15rem;
+}
+
+.cardImage {
+  height: 100%;
+  width: 15rem;
+  object-fit: contain;
+}
+
+.containerButton {
+  margin-right: 2rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+}
+
+.CardIcon {
+  cursor: pointer;
+  margin: 0.5em !important;
+  width: 1.9em !important;
+  height: 1.9em !important;
+  color: #169E85 !important;
+}
+
+.CardIcon:hover {
+  color: white !important;
+  stroke: #169E85 !important;
+  stroke-width: 1px !important;
+}
+
+.cardPrice {
+  color: #169E85 !important;
+  font-size: 1.5em;
+  font-weight: 600 !important;
+}
+
+body.Dark .card{
+  background: linear-gradient( 90deg, white 45%, #0f7461);
+  border: none;
+}
+
+body.Dark .containerListDescription{
+  background-color: rgba(0, 0, 0, 0);
+}

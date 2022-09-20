@@ -1,0 +1,40 @@
+.containerNothingFound {
+    display: flex;
+    justify-content: center;
+}
+
+.cardNothingFound {
+    height: 30vh !important;
+    width: 60% !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.imgNothinFound {
+    margin-left: 2.5em;
+    width: 10em;
+    height: 10em;
+    color: #169E85;
+}
+
+.bodyNothingFound {
+    padding-left: 0 !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titleNothingFound {
+    font-weight: bold !important;
+    font-style: italic;
+}
+
+.tryThis {
+    margin-bottom: 0 !important;
+}
+
+.linkToHome {
+    color: #169E85 !important;
+}

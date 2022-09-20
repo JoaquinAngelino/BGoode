@@ -1,0 +1,122 @@
+.shoppingCart {
+  padding: 1em 2.5em;
+  margin: 1.5em 3em;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: .5em .5em 2em #282c34;
+}
+
+.shoppingCart h2 {
+  border-bottom: 1px solid rgb(0, 0, 0, .3);
+  width: 65%;
+  padding-bottom: .5em;
+  margin: 0;
+}
+
+.shoppingCart .cardShoppingCart {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0, .3);
+  border-radius: 0;
+  padding: 1em;
+  align-items: center;
+  gap: .7em;
+}
+
+.principalSC {
+  display: flex;
+  gap: 2em;
+}
+
+.containerCardsSC {
+  width: 65%;
+}
+
+.cardShoppingCart .cardContainerImageSC{
+  height: 10em;
+  width: 15%;
+}
+
+.cardShoppingCart .cardImageSC {
+  width: 100%;
+  height: 10em;
+  object-fit: contain;
+}
+
+.containerBodySC {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+}
+
+.shoppingCart p {
+  margin: 0;
+}
+
+.containerBodySC span {
+  color: #169E85;
+  font-weight: 600;
+}
+
+.containerBodySC .priceSC {
+  font-size: 1.3em;
+  margin-left: 1em;
+}
+
+.containerButtonsSC {
+  text-align: center;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  padding-left: 1em;
+}
+
+.containerButtonsSC .MuiSvgIcon-root{
+  color: #169E85;
+  cursor: pointer;
+}
+
+.selectQuantity {
+  display: flex;
+  gap: .7em;
+}
+
+.selectQuantity p {
+  font-weight: 600;
+}
+
+.paymentDetailSC {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.paymentDetailSC .MuiButton-contained {
+  background-color: #169E85;
+}
+
+.paymentDetailSC .MuiButton-contained:hover {
+  background-color: #0F6B5A;
+}
+
+.paymentDetailSC p {
+  font-size: 1.5em;
+  padding-bottom: .3em;
+  border-bottom: 1px solid rgb(0, 0, 0, .4);
+}
+
+.paymentDetailSC span {
+  font-weight: 600;
+}

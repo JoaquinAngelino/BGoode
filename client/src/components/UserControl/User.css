@@ -1,0 +1,20 @@
+.UserEditMargin{
+  margin: 40px;
+}
+
+.UserEditContainer {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: #0f7461;
+  color: aliceblue;
+  border-radius: 4px;
+  width:fit-content;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.BtnCenter{
+  display: block;
+  margin: auto;
+}

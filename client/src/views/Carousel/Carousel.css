@@ -1,0 +1,20 @@
+.containerCarousel {
+    width: 40rem;
+    height: 25rem;
+    transition: all ease 0.5s;
+    margin-bottom: 1rem;
+}
+
+.containerCarousel:hover{
+    transform:scale(1.05);
+}
+
+.imageCarousel {
+    width: 100%;
+    height: 25rem;
+    object-fit: contain;
+}
+
+.carousel-item {
+    transition: transform .6s ease-in-out !important;
+}

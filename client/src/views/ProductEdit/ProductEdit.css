@@ -1,0 +1,115 @@
+.ProductEdit h1 {
+    margin-left: 3.3em;
+}
+
+.editInstrumentContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 2em 8em;
+    padding: 2em;
+    box-shadow: .5em .5em 2em #282c34;
+    border-radius: 1em;
+}
+
+.editInstrumentTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.inputLabelField {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 1% 20%;
+}
+
+.addImageField {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addImageField input {
+    width: 80%;
+}
+
+.addImageField select {
+    width: 80%;
+}
+
+.selectLabelField {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.inputLabelField label {
+    font-weight: bold;
+}
+
+.inputLabelField input, select, textarea {
+    border-radius: .4em;
+    border: none;
+    padding: .2em;
+}
+
+.radioInput {
+    margin-right: .5em;
+}
+
+.selectLabelField label {
+    font-weight: bold;
+}
+
+.errorMessage {
+    color: #b50505;
+}
+
+.buttonsGroup {
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+    gap: 1em;
+}
+
+.selectGroup {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30%;
+    margin: 0 10%;
+}
+
+.addImageButton {
+    background-color: #169E85;
+    color: white;
+    border-radius: .5em;
+    border: .3em solid #169E85;
+}
+
+.removeImageButton {
+    margin: 1em 0;
+    background-color: #b50505;
+    color: white;
+    border-radius: .5em;
+    height: 2.5em;
+    border: 1px solid #b50505;
+}
+
+.submitButton {
+    background-color: #169E85;
+    color: white;
+    border-radius: .5em;
+    border: .3em solid #169E85;
+}
+
+.cancelButton {
+    background-color: #b50505;
+    color: white;
+    border-radius: .5em;
+    border: .3em solid #b50505;
+}

@@ -1,0 +1,64 @@
+.ratingContainer {
+    min-width: 45em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: .5em .5em 2em #282c34;
+    border-radius: .5em;
+    padding: 1.5em 2em;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+    gap: .5em;
+}
+
+.ratingContainer h2 {
+    align-self: center;
+    font-style: italic;
+}
+
+.ratingContainer .MuiButton-contained {
+    width: 8em;
+    align-self: center;
+}
+
+.ratingContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    width: 100%;
+}
+
+.starRating {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.principalRating {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    align-items: center;
+}
+
+.ratingContainer label {
+    font-weight: 600;
+}
+
+.inputReview {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.principalReview {
+    display: flex;
+    gap: .5em;
+}
+
+.principalReview textarea {
+    border: 1px solid rgba(0,0,0,.5);
+    width: 100%;
+    outline: none;
+    padding: .5em;
+}

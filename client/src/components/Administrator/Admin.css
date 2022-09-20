@@ -1,0 +1,28 @@
+body {
+    padding-right: 0 !important;
+    overflow: visible !important;
+    font-weight: bold;
+}
+.MuiBox-root, .MuiTable-root{
+    font-weight: 800 !important;
+}
+
+
+.MuiTableCell-root{
+    font-weight: 800 !important;
+    font-size: 1.4rem !important;
+}
+body.Dark .MuiBox-root , body.Dark .MuiTableCell-root{
+    background: #333333;
+    color: azure;
+}
+
+.MuiTypography-root{
+    font-weight: 800 !important;
+    font-size: 1.4rem !important;
+}
+
+.Title-root{
+    font-weight: 800 !important;
+    font-size: 1.4rem !important; 
+}

@@ -1,0 +1,120 @@
+.containerLanding {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.firstContactLanding {
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 93vh;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/811838/pexels-photo-811838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    Background-color: transparent;
+    filter:alpha(opacity=87);
+    -moz-opacity:.87;opacity:.87;
+}
+
+.titleLanding, .textLanding {
+    width: 50vw;
+    text-align: center;
+    color: #20c2a4;
+    font-weight: 800;
+    text-shadow:0 0 6px rgb(0, 0, 0);
+
+}
+.titleLanding{
+    font-size: 3rem;
+}
+
+.divider { 
+    height: 0.25rem;
+    width: 4rem;
+    opacity: 1;
+    margin: 1rem;
+    background-color:  #169E85;
+    color: transparent;
+}
+
+.firstContactLanding span {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.buttonSlide {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    padding: 13px 30px 13px;
+    border: 1px solid white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.buttonSlide i {
+    opacity: 0;
+    font-size: 13px;
+    transition: 0.2s;
+    position: absolute;
+    right: 10px;
+    top: 23px;
+    transition: transform 1;
+}
+
+.buttonSlide div {
+    transition: transform 0.8s;
+}
+
+.buttonSlide:hover div {
+    transform: translateX(-6px);
+}
+
+.buttonSlide::after {
+    content: "";
+    background-color: #169E85;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+}
+
+.buttonSlide:hover i {
+    opacity: 1;
+    transform: translateX(-6px);
+}
+
+.landingCarousel {
+    background-color: #169E85;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.landingCarousel h2 {
+    margin-bottom: 1rem;
+}
+
+.divider2 { 
+    height: 0.25rem;
+    width: 4rem;
+    opacity: 1;
+    margin-bottom: 2.5rem;
+    background-color:  white;
+    color: transparent;
+}
+
+.landingAboutUs {
+    color: black;
+}

@@ -1,0 +1,9 @@
+.containerSpinner {
+    display: flex;
+    min-height: 72vh;
+}
+
+.spinner-grow {
+    margin: auto;
+    color: #212529;
+}

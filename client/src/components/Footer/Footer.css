@@ -1,0 +1,19 @@
+.footer {
+    margin-top: auto !important;
+    padding: 0.5rem !important;
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.terms {
+    font-size: 0.7rem !important;
+}
+
+.footerContact:hover {
+    color: #dddddd;
+}
+
+.contact {
+    display: flex;
+    gap: 1em;
+}

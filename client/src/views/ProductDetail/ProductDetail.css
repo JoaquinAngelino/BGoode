@@ -1,0 +1,199 @@
+.containerDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 1.8em;
+    gap: 2em;
+}
+
+.containerDetails p, h3, h5, ul {
+    margin-bottom: 0 !important;
+}
+
+.containerDetails .MuiDivider-root {
+    width: 65em;
+    opacity: .5 !important;
+    border: 1px solid black !important;
+}
+
+.principalData {
+    width: 75em;
+    height: 28em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: .5em .5em 2em #282c34;
+    padding: 1em 1.5em;
+    border-radius: .5em;
+    gap: 1em;
+}
+
+.principalData .carousel {
+    width: 20em !important;
+    height: 26em !important;
+}
+
+.principalData .MuiSkeleton-root {
+    width: 20em !important;
+    height: 26em !important;
+}
+
+.principalData .imageDetail {
+    width: 100%;
+    height: 26em;
+    object-fit: contain;
+}
+
+.productData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3em;
+    width: 30em;
+}
+
+.productData h3 {
+    overflow: visible;
+}
+
+.productData p {
+    font-size: .9em;
+    width: 90%;
+    overflow:auto;
+    padding-right: 1em;
+}
+
+.productData ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: square;
+}
+
+.listProductDetail {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: .5em;
+}
+
+.listProductDetail b {
+    color: #169E85;
+    font-weight: 600 !important;
+}
+
+.productsOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .6em 0;
+}
+
+.productsOptions .MuiSvgIcon-root{
+    transition: all ease .3s;
+}
+
+.productsOptions .MuiSvgIcon-root:hover{
+    color: #169E85;
+    transform: scale(1.2);
+}
+
+.share-favorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5em;
+    font-size: .8em;
+    gap: 1em;
+}
+
+.detailPayment {
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    width: 15em;
+    height: 18em;
+    align-items: flex-end;
+    background-color: rgba(0,0,0,.06);
+}
+
+.detailPayment h5 {
+    color: #169E85;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.editButton {
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+    background-color: #169E85;
+    border-radius: 1em;
+    border: none;
+    color: white;
+    width: 30%;
+}
+
+.formDetailProduct {
+    display: flex;
+    flex-direction: column;
+    border-radius: .5em;
+    padding: .5em;
+    height: 14em;
+    width: 13em;
+    gap: .8em;
+}
+
+.total {
+    display: flex;
+}
+
+.total span {
+    display: flex;
+    margin-left: auto;
+    font-weight: 600 !important;
+}
+
+.selectInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.selectInput .form-label {
+    align-self: flex-start;
+    font-size: 1.1em;
+}
+
+.selectInput .form-select {
+    border: 1px solid rgba(0,0,0,.4) !important;
+    border-radius: .5em;
+    width: 95%;
+    cursor: pointer;
+}
+
+.selectInput .form-select:focus {
+    box-shadow: none !important;
+}
+
+.containerDetails .MuiButton-contained {
+    width: 100%;
+    background-color: #169E85;
+}
+
+.containerDetails .MuiButton-contained:hover {
+    background-color: #0F6B5A;
+}
+
+.formDetailProduct .MuiButton-outlined {
+    border-color: rgb(22, 158, 133, .5);
+    color: #169E85;
+}
+
+.formDetailProduct .MuiButton-outlined:hover {
+    border-color: #169E85;
+    color: #169E85;
+}

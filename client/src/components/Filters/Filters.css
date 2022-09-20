@@ -1,0 +1,66 @@
+.filtersContainer {
+    width: 280px;
+    background-color: white;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.filtersContainer .MuiInputBase-root {
+    height: 2em !important;
+    margin-left: 0 !important;
+    padding-left: .5em !important;
+}
+
+.filtersContainer .MuiInputBase-input {
+    font-size: .8em;
+    position: relative;
+    left: -.6em;
+    padding: 0 !important;
+}
+
+.filtersContainer .MuiInputAdornment-root {
+    position: relative;
+    top: -.5em ;
+    left: -.3em;
+}
+
+.filtersContainer .MuiSlider-root {
+    color: #169E85 !important;
+}
+
+.filtersContainer .MuiButtonBase-root {
+    padding: 0 !important;
+    height: 1em !important;
+    transition: all ease .5s;
+    position: relative;
+    bottom: .5em;
+}
+
+.filtersContainer .MuiButtonBase-root:hover {
+    background-color: white !important;
+    transform: translateX(.3em);
+}
+
+.filtersContainer .css-12005ah-MuiInputBase-root-MuiFilledInput-root-MuiSelect-root::after, .css-1xab92c-MuiInputBase-root-MuiFilledInput-root::after {
+    border-bottom: 0 !important;
+}
+
+#mui-component-select-brand {
+    padding: 0 !important;
+}
+
+.filterPrice {
+    display: flex;
+    flex-direction: row !important;
+    gap: 1.7em;
+    margin-left: .4em !important;
+    align-items: center;
+}
+body.Dark .filtersContainer, body.Dark .filterPrice, body.Dark .MuiSlider-root{
+    background-color:#0f7461 !important;
+    color: white !important;
+    font-family: serif !important;
+}
+

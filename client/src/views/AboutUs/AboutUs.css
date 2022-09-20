@@ -1,0 +1,87 @@
+.containerAboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.dividerAboutUs {
+  height: 0.25rem;
+  width: 4rem;
+  opacity: 1;
+  margin-bottom: 1.5rem;
+  background-color: black;
+  color: transparent;
+}
+
+.containerAboutUs span {
+  margin-bottom: 2.5rem;
+}
+
+.imageAboutUs {
+  width: 100%;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.TeamDiv {
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(4, 200px);
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  column-gap: 70px;
+  row-gap: 20px;
+  border-radius: 0.3em;
+}
+
+.TeamCard {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+  width: 250px;
+  padding: 0 5% 0 5%;
+  background-color: #FFFFFF;
+}
+
+.CardIcon {
+  margin: 20px;
+  width: 2.5em;
+  height: 2.5em;
+  transition: all 0.3s;
+}
+
+.CardIcon:hover {
+  transform: scale(1.1);
+  color: #198754;
+}
+
+.IconsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PageTitle {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.textAboutUs {
+  font-size: 1.3em;
+}
+
+body.Dark .TeamCard {
+  background: #125548;
+  color: white;
+}
+
+body.Dark .CardIcon {
+  stroke: black;
+}
+
+body.Dark .CardIcon:hover {
+  stroke: black;
+  fill: black;
+}

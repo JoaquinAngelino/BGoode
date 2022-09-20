@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/*#212529 (NO BORRAR! Color del navBar por si se llega a usar)*/
+
+body {
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0,0,0,.1);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.4s;
+  text-transform: none !important;
+  padding: 0px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  text-transform: none !important;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:any-link{
+  color: #333333;
+  text-decoration: none;
+}
+
+:any-link:hover{
+  color: #333333;
+}
+
+.Dark {
+  background-color: #333333;
+  color: white;
+}
