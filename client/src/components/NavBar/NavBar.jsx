@@ -29,9 +29,7 @@ export default function NavBar() {
                 <div className="d-flex align-items-center">
                     <div className="d-flex me-5">
                         <img className="navbarLogo" src={goode_logo} alt="Logo B. Goode" width="40" height='40' />
-                        <Link className="navbar-brand" to="/">
-                            B. Goode
-                        </Link>
+                        <Link className="navbar-brand" to="/">B. Goode</Link>
                     </div>
                 </div>
 

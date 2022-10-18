@@ -8,7 +8,7 @@ import './ContactUs.css'
 export default function ContactUs() {
   const dispatch = useDispatch();
   const [input, setInput] = useState({
-    subject: "",
+    subject: "product",
     name: "",
     email: "",
     message: "",

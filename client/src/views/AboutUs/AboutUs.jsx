@@ -70,18 +70,6 @@ export default function AboutUs() {
             </a>
           </div>
         </div>
-        <div className='TeamCard'>
-          <img className='imageAboutUs' src="https://media-exp1.licdn.com/dms/image/C4E03AQFB5rm-P6lXyA/profile-displayphoto-shrink_200_200/0/1611165093546?e=1666828800&v=beta&t=kpk6wJc-x5XsAVBOu-CNOHX1BKEXSXFaWxo5kzMG_NU" alt="Veronica Valdivia" />
-          <p>Veronica Valdivia</p>
-          <div className='IconDiv'>
-            <a rel="noreferrer" target="_blank" href="https://github.com/valdiviavv">
-              <BsGithub className='CardIcon' />
-            </a>
-            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/veronica-vazquez-valdivia-249238128">
-              <BsLinkedin className='CardIcon' />
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   )

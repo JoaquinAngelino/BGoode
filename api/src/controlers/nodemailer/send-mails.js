@@ -6,7 +6,6 @@ const Products = require('../../models/Products')
 async function saleMail(id) {
     try {
         const foundOrder = await Orders.findById({ _id: id })
-        //console.log(foundOrder);
         const foundUserSeller = await Users.findById(foundOrder.userseller).populate({ path: "orders" });
         const foundUserBuyer = await Users.findById(foundOrder.user).populate({ path: "orders" })
         const foundIdProducts = foundOrder.products.map(pro => pro.products);
@@ -32,4 +31,4 @@ async function sendClaim(req, res) {
         })
     }
 }
-module.exports = { /* authMail, */ saleMail, sendClaim }
+module.exports = { saleMail, sendClaim }
