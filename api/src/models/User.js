@@ -1,75 +1,84 @@
+const mongoose = require("mongoose");
 const { Schema, model } = require('mongoose');
 
-const UserSchema = new Schema(
-    {
-        nickname:
-            { type: String, required: true, unique: true },
-        username:
-            { type: String, unique: true },
-        email:
-            { type: String, required: true, unique: true },
-        name: {
-            type: String,
+const UserSchema = new mongoose.Schema(
+  {
+    nickname: { type: String, required: true, unique: true },
+
+    username: { type: String, unique: true },
+
+    email: { type: String, required: true, unique: true },
+
+    name: { type: String, },
+
+    lastname: {type: String, },
+
+    country: {type: String, default: "Argentina"},
+
+    password: { type: String, },
+    
+    picture: {type: String, },
+
+    phone: {type: String,},
+
+    purchase_order: {
+        products: [{
+          publicationId: {
+            type: Schema.Types.ObjectId,
+            ref: 'PublicationTest'
+          },
+          quantity: {
+            type: Number
+          },
+        }],
+        link: {
+          type: String
+        }
+      },
+
+    address: {
+            province: String,
+            city: String,
+            postalcode: Number,
+            street: String,
+            number: String,
+            dpto: {
+              floor: String,
+              number: String,
+            },
+            reference: String,
+          },
+
+    isAdmin: { type: Boolean, default: false },
+    
+    isActive: { type: Boolean, default: true },
+    
+    isBloked: { type: Boolean, default: false }, // baneado ? razon? por tiempo?
+    
+    authorization: {
+        roles: {
+          type: [String],
+          enum: ['common', 'buyer', 'seller', 'admin'],
+          default: ['common'],
         },
-        lastname: {
-            type: String,
-        },
-        birthday: {
-            type: String,
-            default: '',
-        },
-        dni: {
-            type: String,
-            default: '',
-        },
-        country: {
-            type: String,
-            default: '',
-        },
-        password:
-            { type: String },
-        picture: {
-            type: String
-        },
-        phone: {
-            type: String,
-            default: '',
-        },
-        address: {
-            type: String,
-            default: '',
-        },
-        ciudad: {
-            type: String,
-            default: '',
-        },
-        postal: {
-            type: String,
-            default: '',
-        },
-        accountid:
-            { type: String },
-        cusid:
-            { type: String },
-        isAdmin:
-            { type: Boolean, default: false },
-        isActive:
-            { type: Boolean, default: true },
-        isBloked:
-            { type: Boolean, default: false },  // baneado ? razon? por tiempo?
-        score:
-        {
-            stars: { type: Number, default: 0 },
-            reviews: { type: Number, default: 0 },
-        },
-        products:
-            [{ type: Schema.Types.ObjectId, ref: "Products" }],
-        orders:
-            [{ type: Schema.Types.ObjectId, ref: "Order" }],
-        favorites:
-            [{ type: Schema.Types.ObjectId, ref: "Order" }]
+      },
+
+    score: {
+      stars: { type: Number, default: 0 },
+      reviews: { type: Number, default: 0 },
     },
-    { timestamps: true }
+
+    purchase_history: {
+        type: [Schema.Types.ObjectId],
+        ref: "Transaction",
+      },
+   
+
+    favorites: [{ type: Schema.Types.ObjectId, ref: "Order" }],
+  },
+  { timestamps: true }
 );
 
-module.exports = model('User', UserSchema)
+const User = mongoose.model("users", UserSchema);
+
+module.exports = User;

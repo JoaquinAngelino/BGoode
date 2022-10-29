@@ -1,4 +1,4 @@
-const Products = require('../../models/Products')
+const Products = require('../../models/Product')
 
 async function filterProducts(req,res){
     let condition={}

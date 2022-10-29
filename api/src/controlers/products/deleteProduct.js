@@ -1,5 +1,4 @@
-const Product = require("../../models/Products");
-const Order = require("../../models/Order");
+const Product = require("../../models/Product");
 const User = require("../../models/User");
 
 const deleteProduct = async (req, res) => {

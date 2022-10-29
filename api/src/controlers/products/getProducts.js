@@ -1,8 +1,8 @@
-const Product = require("../../models/Products");
+const Product = require("../../models/Product");
 
 const getProducts = async (req, res, next) => {
     try {
-        const products = await Product.find().populate({path:"user"})
+        const products = await Product.find().populate({path:"seller"})
         for (const product of products) {
             if(product.user) product.user.password = ""
         }

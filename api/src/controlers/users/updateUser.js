@@ -1,5 +1,4 @@
 const User = require("../../models/User");
-const UserData = require("../../models/UserData");
 const CryptoJS = require("crypto-js");
 const {
     verifyToken,
@@ -21,12 +20,7 @@ const updateUser = (verifyTokenAndAuthorization, async (req, res) => {
             { new: true }
         )
         if (!user) user = await User.findById(req.params.id)
-        await UserData.findByIdAndUpdate(
-            user.userData,
-            { $set: req.body },
-            { new: true }
-        )
-        res.status(200).json(user);
+     .status(200).json(user);
     } catch (err) {
         res.status(500).json(err);
     }
